@@ -23,28 +23,36 @@ Automatically checks if the server has a valid IP, can reach the Gateway, resolv
 ./net-doctor.sh
 
 ### 2. Automated Log Auditor 
-Analyzes a web server log file (server.log) to generate a security report. Prerequisite: Ensure a file named server.log exists in the same directory.
+Analyzes a web server log file (server.log) to generate a security report.
+Prerequisite: Ensure a file named server.log exists in the same directory.
  Usage:
 ./log-analyzer.sh
+
 3. User Onboarding Automation (onboard.sh)
-Reads a CSV file to create users and assign them to groups. Prerequisite: Create a file named new_hires.csv with the format: username,group. Usage (Requires Root):
+Reads a CSV file to create users and assign them to groups.
+Prerequisite: Create a file named new_hires.csv with the format: username,group.
+Usage (Requires Root):
 
 Bash
 
 sudo ./onboard.sh
+
 4. Real-Time Health Dashboard (dashboard.sh)
-Generates an HTML page showing CPU, RAM, Disk, and Uptime stats. Setup:
+Generates an HTML page showing CPU, RAM, Disk, and Uptime stats.
+Setup:
 
 Open the script and set OUTPUT_FILE to your desired path.
 
-Serve the directory using Python or Nginx. Usage:
+Serve the directory using Python or Nginx.
+Usage:
 
 Bash
 
 sudo ./dashboard.sh
 # View output at http://localhost:8000
 5. Backup & Retention System (backup_manager.sh)
-Archives a source directory and deletes backups older than 7 days. Usage:
+Archives a source directory and deletes backups older than 7 days.
+Usage:
 
 Bash
 
